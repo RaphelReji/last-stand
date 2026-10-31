@@ -10,7 +10,10 @@ radius = 34.07
 script = ExtResource("1_onrkg")
 
 [node name="HappyBoo" parent="." unique_id=1091727253 instance=ExtResource("1_4flbx")]
+unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=742538132]
 position = Vector2(0, -1)
 shape = SubResource("CircleShape2D_1pfk3")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1585315270]
