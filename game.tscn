@@ -23,6 +23,7 @@ offset_top = -104.0
 offset_right = 1386.0
 offset_bottom = 791.0
 scale = Vector2(1.0060151, 1)
+color = Color(0.56078434, 0.7372549, 0.44705883, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." unique_id=1586275575 instance=ExtResource("1_80nbo")]
@@ -84,5 +85,22 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 118
 text = "Game Over"
 
+[node name="RestartButton" type="Button" parent="GameOver" unique_id=1936833400]
+process_mode = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 66.0
+offset_right = 35.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "RESTART
+"
+
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="GameOver/RestartButton" to="." method="_on_restart_button_pressed"]
