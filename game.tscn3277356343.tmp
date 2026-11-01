@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cusn54ujeix86"]
+
+[ext_resource type="PackedScene" uid="uid://73476beeelqf" path="res://player.tscn" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://crr1gqqa24lbr" path="res://game.gd" id="1_feb5d"]
+[ext_resource type="PackedScene" uid="uid://3qq8lvw3r88o" path="res://pine_tree.tscn" id="2_e2o6t"]
+
+[sub_resource type="Curve2D" id="Curve2D_feb5d"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -232, -249, 0, 0, 0, 0, -238, 919, 0, 0, 0, 0, 1480, 924, 0, 0, 0, 0, 1491, -263, 0, 0, 0, 0, -232, -249)
+}
+point_count = 5
+
+[node name="Game" type="Node2D" unique_id=1239996648]
+y_sort_enabled = true
+script = ExtResource("1_feb5d")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=537308632]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=570685806]
+offset_left = -150.0
+offset_top = -104.0
+offset_right = 1386.0
+offset_bottom = 791.0
+scale = Vector2(1.0060151, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" parent="." unique_id=1586275575 instance=ExtResource("1_80nbo")]
+position = Vector2(525, 359)
+
+[node name="PineTree" parent="." unique_id=1314905022 instance=ExtResource("2_e2o6t")]
+position = Vector2(142, 445)
+
+[node name="PineTree2" parent="." unique_id=1516486732 instance=ExtResource("2_e2o6t")]
+position = Vector2(389, 95)
+
+[node name="PineTree3" parent="." unique_id=1402919643 instance=ExtResource("2_e2o6t")]
+position = Vector2(1046, 119)
+
+[node name="PineTree4" parent="." unique_id=500491143 instance=ExtResource("2_e2o6t")]
+position = Vector2(882, 488)
+
+[node name="PineTree5" parent="." unique_id=2025608037 instance=ExtResource("2_e2o6t")]
+position = Vector2(796, 197)
+
+[node name="Path2D" type="Path2D" parent="." unique_id=868478907]
+curve = SubResource("Curve2D_feb5d")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=121851018]
+unique_name_in_owner = true
+position = Vector2(-232, -249)
+rotation = 1.5759332
