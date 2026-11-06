@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Last Stand"
-run/main_scene="uid://cusn54ujeix86"
+run/main_scene="uid://caep1labp4tp"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]

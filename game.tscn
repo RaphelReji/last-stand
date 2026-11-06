@@ -4,9 +4,12 @@
 [ext_resource type="Script" uid="uid://crr1gqqa24lbr" path="res://game.gd" id="1_feb5d"]
 [ext_resource type="PackedScene" uid="uid://3qq8lvw3r88o" path="res://pine_tree.tscn" id="2_e2o6t"]
 
+[sub_resource type="FontVariation" id="FontVariation_feb5d"]
+variation_embolden = 1.27
+
 [sub_resource type="Curve2D" id="Curve2D_feb5d"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -232, -249, 0, 0, 0, 0, -238, 919, 0, 0, 0, 0, 1480, 924, 0, 0, 0, 0, 1491, -263, 0, 0, 0, 0, -232, -249)
+"points": PackedVector2Array(0, 0, 0, 0, -232, -249, 0, 0, 0, 0, -238, 919, 0, 0, 0, 0, 1480, 924, 0, 0, 0, 0, 1475.4531, -259.7561, 0, 0, 0, 0, -232, -249)
 }
 point_count = 5
 
@@ -18,21 +21,24 @@ script = ExtResource("1_feb5d")
 layer = -30
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=570685806]
-offset_left = -150.0
-offset_top = -104.0
-offset_right = 1386.0
-offset_bottom = 791.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(1.0060151, 1)
 color = Color(0.56078434, 0.7372549, 0.44705883, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=452068667]
 unique_name_in_owner = true
+modulate = Color(1, 0.8352941, 0, 1)
 custom_maximum_size = Vector2(30, -1)
-offset_left = 30.0
-offset_top = 20.0
-offset_right = 60.0
-offset_bottom = 43.0
+offset_left = 31.0
+offset_top = 18.0
+offset_right = 61.0
+offset_bottom = 60.0
+size_flags_horizontal = 4
+theme_override_fonts/font = SubResource("FontVariation_feb5d")
 theme_override_font_sizes/font_size = 28
 text = "Score: 0"
 
@@ -40,7 +46,8 @@ text = "Score: 0"
 position = Vector2(525, 359)
 
 [node name="Path2D" type="Path2D" parent="Player" unique_id=868478907]
-position = Vector2(-525, -359)
+position = Vector2(-507, -225)
+scale = Vector2(1.074739, 0.87220234)
 curve = SubResource("Curve2D_feb5d")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D" unique_id=121851018]
@@ -57,8 +64,236 @@ position = Vector2(389, 95)
 [node name="PineTree3" parent="." unique_id=1402919643 instance=ExtResource("2_e2o6t")]
 position = Vector2(1046, 119)
 
-[node name="PineTree4" parent="." unique_id=500491143 instance=ExtResource("2_e2o6t")]
-position = Vector2(882, 488)
+[node name="PineTree37" parent="." unique_id=1291600617 instance=ExtResource("2_e2o6t")]
+position = Vector2(1329, -276)
+
+[node name="PineTree38" parent="." unique_id=1293715778 instance=ExtResource("2_e2o6t")]
+position = Vector2(-243, 1595)
+
+[node name="PineTree40" parent="." unique_id=1081121221 instance=ExtResource("2_e2o6t")]
+position = Vector2(78, 1590)
+
+[node name="PineTree42" parent="." unique_id=1969443367 instance=ExtResource("2_e2o6t")]
+position = Vector2(-699, 997)
+
+[node name="PineTree43" parent="." unique_id=1850451013 instance=ExtResource("2_e2o6t")]
+position = Vector2(-689, 1075)
+
+[node name="PineTree44" parent="." unique_id=684367553 instance=ExtResource("2_e2o6t")]
+position = Vector2(-676, 1186)
+
+[node name="PineTree45" parent="." unique_id=1632307810 instance=ExtResource("2_e2o6t")]
+position = Vector2(-666, 1296)
+
+[node name="PineTree49" parent="." unique_id=889088523 instance=ExtResource("2_e2o6t")]
+position = Vector2(-427, 1585)
+
+[node name="PineTree50" parent="." unique_id=2140440477 instance=ExtResource("2_e2o6t")]
+position = Vector2(-336, 1604)
+
+[node name="PineTree51" parent="." unique_id=1535867476 instance=ExtResource("2_e2o6t")]
+position = Vector2(289, 1585)
+
+[node name="PineTree53" parent="." unique_id=935185979 instance=ExtResource("2_e2o6t")]
+position = Vector2(210, -727)
+
+[node name="PineTree54" parent="." unique_id=651588361 instance=ExtResource("2_e2o6t")]
+position = Vector2(130, -706)
+
+[node name="PineTree55" parent="." unique_id=1081198479 instance=ExtResource("2_e2o6t")]
+position = Vector2(83, -711)
+
+[node name="PineTree56" parent="." unique_id=602749791 instance=ExtResource("2_e2o6t")]
+position = Vector2(-1, -689)
+
+[node name="PineTree57" parent="." unique_id=459470927 instance=ExtResource("2_e2o6t")]
+position = Vector2(-90, -662)
+
+[node name="PineTree58" parent="." unique_id=2088857164 instance=ExtResource("2_e2o6t")]
+position = Vector2(-149, -678)
+
+[node name="PineTree62" parent="." unique_id=642123544 instance=ExtResource("2_e2o6t")]
+position = Vector2(-519, -504)
+
+[node name="PineTree63" parent="." unique_id=175875085 instance=ExtResource("2_e2o6t")]
+position = Vector2(-574, -438)
+
+[node name="PineTree64" parent="." unique_id=1533170039 instance=ExtResource("2_e2o6t")]
+position = Vector2(-618, -361)
+
+[node name="PineTree65" parent="." unique_id=1068081567 instance=ExtResource("2_e2o6t")]
+position = Vector2(-640, -298)
+
+[node name="PineTree66" parent="." unique_id=937335892 instance=ExtResource("2_e2o6t")]
+position = Vector2(-637, -220)
+
+[node name="PineTree67" parent="." unique_id=983091279 instance=ExtResource("2_e2o6t")]
+position = Vector2(-646, -144)
+
+[node name="PineTree79" parent="." unique_id=472782459 instance=ExtResource("2_e2o6t")]
+position = Vector2(1289, 1573)
+
+[node name="PineTree80" parent="." unique_id=406910477 instance=ExtResource("2_e2o6t")]
+position = Vector2(1220, 1551)
+
+[node name="PineTree81" parent="." unique_id=332419646 instance=ExtResource("2_e2o6t")]
+position = Vector2(1113, 1574)
+
+[node name="PineTree82" parent="." unique_id=132797691 instance=ExtResource("2_e2o6t")]
+position = Vector2(1033, 1548)
+
+[node name="PineTree83" parent="." unique_id=231210990 instance=ExtResource("2_e2o6t")]
+position = Vector2(928, 1570)
+
+[node name="PineTree84" parent="." unique_id=748334176 instance=ExtResource("2_e2o6t")]
+position = Vector2(821, 1570)
+
+[node name="PineTree85" parent="." unique_id=1013390978 instance=ExtResource("2_e2o6t")]
+position = Vector2(745, 1575)
+
+[node name="PineTree86" parent="." unique_id=1520830256 instance=ExtResource("2_e2o6t")]
+position = Vector2(664, 1547)
+
+[node name="PineTree87" parent="." unique_id=1082285923 instance=ExtResource("2_e2o6t")]
+position = Vector2(584, 1568)
+
+[node name="PineTree89" parent="." unique_id=376067768 instance=ExtResource("2_e2o6t")]
+position = Vector2(2401, 1543)
+
+[node name="PineTree90" parent="." unique_id=286317120 instance=ExtResource("2_e2o6t")]
+position = Vector2(2332, 1521)
+
+[node name="PineTree91" parent="." unique_id=1484339367 instance=ExtResource("2_e2o6t")]
+position = Vector2(2225, 1544)
+
+[node name="PineTree92" parent="." unique_id=1073644679 instance=ExtResource("2_e2o6t")]
+position = Vector2(2145, 1518)
+
+[node name="PineTree95" parent="." unique_id=159707969 instance=ExtResource("2_e2o6t")]
+position = Vector2(1857, 1545)
+
+[node name="PineTree96" parent="." unique_id=1469767192 instance=ExtResource("2_e2o6t")]
+position = Vector2(1776, 1517)
+
+[node name="PineTree97" parent="." unique_id=812718972 instance=ExtResource("2_e2o6t")]
+position = Vector2(1696, 1538)
+
+[node name="PineTree98" parent="." unique_id=784477339 instance=ExtResource("2_e2o6t")]
+position = Vector2(2102, 731)
+rotation = -0.026902348
+
+[node name="PineTree99" parent="." unique_id=1274640068 instance=ExtResource("2_e2o6t")]
+position = Vector2(2021, 703)
+rotation = -0.026902348
+
+[node name="PineTree100" parent="." unique_id=1621232334 instance=ExtResource("2_e2o6t")]
+position = Vector2(1941, 724)
+rotation = -0.026902348
+
+[node name="PineTree101" parent="." unique_id=1128584177 instance=ExtResource("2_e2o6t")]
+position = Vector2(2507, 442.99997)
+rotation = -0.026902348
+
+[node name="PineTree102" parent="." unique_id=645086372 instance=ExtResource("2_e2o6t")]
+position = Vector2(2426, 414.99997)
+rotation = -0.026902348
+
+[node name="PineTree103" parent="." unique_id=1193613742 instance=ExtResource("2_e2o6t")]
+position = Vector2(2346, 435.99997)
+rotation = -0.026902348
+
+[node name="PineTree104" parent="." unique_id=202001586 instance=ExtResource("2_e2o6t")]
+position = Vector2(2549, 1028)
+rotation = -0.026902348
+
+[node name="PineTree105" parent="." unique_id=1019178767 instance=ExtResource("2_e2o6t")]
+position = Vector2(2468, 1000)
+rotation = -0.026902348
+
+[node name="PineTree106" parent="." unique_id=1397528373 instance=ExtResource("2_e2o6t")]
+position = Vector2(2388, 1021)
+rotation = -0.026902348
+
+[node name="PineTree107" parent="." unique_id=534427879 instance=ExtResource("2_e2o6t")]
+position = Vector2(-743.00024, 331.00003)
+rotation = -0.026902348
+
+[node name="PineTree108" parent="." unique_id=1376906987 instance=ExtResource("2_e2o6t")]
+position = Vector2(-824.00024, 303.00003)
+rotation = -0.026902348
+
+[node name="PineTree109" parent="." unique_id=132898738 instance=ExtResource("2_e2o6t")]
+position = Vector2(-904.00024, 324.00003)
+rotation = -0.026902348
+
+[node name="PineTree110" parent="." unique_id=1484572087 instance=ExtResource("2_e2o6t")]
+position = Vector2(844.00024, -860.0001)
+rotation = -0.026902348
+
+[node name="PineTree111" parent="." unique_id=2133226356 instance=ExtResource("2_e2o6t")]
+position = Vector2(763.00024, -888.0001)
+rotation = -0.026902348
+
+[node name="PineTree112" parent="." unique_id=1885570463 instance=ExtResource("2_e2o6t")]
+position = Vector2(683.00024, -867.0001)
+rotation = -0.026902348
+
+[node name="PineTree113" parent="." unique_id=395893177 instance=ExtResource("2_e2o6t")]
+position = Vector2(1875.0001, -673)
+rotation = -0.026902348
+
+[node name="PineTree114" parent="." unique_id=1818981469 instance=ExtResource("2_e2o6t")]
+position = Vector2(1794.0001, -701)
+rotation = -0.026902348
+
+[node name="PineTree115" parent="." unique_id=842325607 instance=ExtResource("2_e2o6t")]
+position = Vector2(1714.0001, -680)
+rotation = -0.026902348
+
+[node name="PineTree116" parent="." unique_id=1766969299 instance=ExtResource("2_e2o6t")]
+position = Vector2(2372, -162.99994)
+rotation = -0.026902348
+
+[node name="PineTree117" parent="." unique_id=946588506 instance=ExtResource("2_e2o6t")]
+position = Vector2(2291, -190.99994)
+rotation = -0.026902348
+
+[node name="PineTree118" parent="." unique_id=597555958 instance=ExtResource("2_e2o6t")]
+position = Vector2(2211, -169.99994)
+rotation = -0.026902348
+
+[node name="PineTree88" parent="." unique_id=367150498 instance=ExtResource("2_e2o6t")]
+position = Vector2(-811, 597)
+
+[node name="PineTree52" parent="." unique_id=268981673 instance=ExtResource("2_e2o6t")]
+position = Vector2(179, 1581)
+
+[node name="PineTree32" parent="." unique_id=1416959209 instance=ExtResource("2_e2o6t")]
+position = Vector2(-654, 684)
+
+[node name="PineTree33" parent="." unique_id=1514304969 instance=ExtResource("2_e2o6t")]
+position = Vector2(-447, 199)
+
+[node name="PineTree34" parent="." unique_id=1266598336 instance=ExtResource("2_e2o6t")]
+position = Vector2(-429, -132)
+
+[node name="PineTree35" parent="." unique_id=1407171180 instance=ExtResource("2_e2o6t")]
+position = Vector2(-241, -444)
+
+[node name="PineTree36" parent="." unique_id=1528195956 instance=ExtResource("2_e2o6t")]
+position = Vector2(972, -554)
+
+[node name="PineTree22" parent="." unique_id=2116494645 instance=ExtResource("2_e2o6t")]
+position = Vector2(1751, -105)
+
+[node name="PineTree23" parent="." unique_id=268903998 instance=ExtResource("2_e2o6t")]
+position = Vector2(1751, -105)
+
+[node name="PineTree20" parent="." unique_id=931352295 instance=ExtResource("2_e2o6t")]
+position = Vector2(1056, -664)
+
+[node name="PineTree19" parent="." unique_id=464836275 instance=ExtResource("2_e2o6t")]
+position = Vector2(889, -434)
 
 [node name="PineTree5" parent="." unique_id=2025608037 instance=ExtResource("2_e2o6t")]
 position = Vector2(796, 197)
@@ -69,6 +304,7 @@ autostart = true
 
 [node name="GameOver" type="CanvasLayer" parent="." unique_id=1551070592]
 unique_name_in_owner = true
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="GameOver" unique_id=1768596600]
 anchors_preset = 15
@@ -114,13 +350,73 @@ text = "RESTART
 "
 
 [node name="MenuButton" type="Button" parent="GameOver" unique_id=501554043]
-offset_left = 604.0
-offset_top = 477.0
-offset_right = 679.0
-offset_bottom = 513.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -38.0
+offset_top = -247.0
+offset_right = 31.0
+offset_bottom = -211.0
+grow_horizontal = 2
+grow_vertical = 0
 theme_override_font_sizes/font_size = 20
 text = "MENU"
+
+[node name="PineTree6" parent="." unique_id=2100007219 instance=ExtResource("2_e2o6t")]
+position = Vector2(1241, 629)
+
+[node name="PineTree24" parent="." unique_id=82351783 instance=ExtResource("2_e2o6t")]
+position = Vector2(1425, -391)
+
+[node name="PineTree25" parent="." unique_id=360012541 instance=ExtResource("2_e2o6t")]
+position = Vector2(1480, -60)
+
+[node name="PineTree26" parent="." unique_id=2044029234 instance=ExtResource("2_e2o6t")]
+position = Vector2(-156, 326)
+
+[node name="PineTree27" parent="." unique_id=912806434 instance=ExtResource("2_e2o6t")]
+position = Vector2(-50, -235)
+
+[node name="PineTree28" parent="." unique_id=625469607 instance=ExtResource("2_e2o6t")]
+position = Vector2(423, -442)
+
+[node name="PineTree29" parent="." unique_id=606718649 instance=ExtResource("2_e2o6t")]
+position = Vector2(147, -447)
+
+[node name="PineTree7" parent="." unique_id=1251637388 instance=ExtResource("2_e2o6t")]
+position = Vector2(462, 131)
+
+[node name="PineTree8" parent="." unique_id=441460712 instance=ExtResource("2_e2o6t")]
+position = Vector2(624, -127)
+
+[node name="PineTree9" parent="." unique_id=1080163252 instance=ExtResource("2_e2o6t")]
+position = Vector2(269, -261)
+
+[node name="PineTree18" parent="." unique_id=1014749470 instance=ExtResource("2_e2o6t")]
+position = Vector2(1403, 324.99988)
+scale = Vector2(-0.75992453, 1.8065413)
+
+[node name="PineTree10" parent="." unique_id=2033044435 instance=ExtResource("2_e2o6t")]
+position = Vector2(698, -253)
+
+[node name="PineTree11" parent="." unique_id=1384288927 instance=ExtResource("2_e2o6t")]
+position = Vector2(1219, -175)
+
+[node name="PineTree12" parent="." unique_id=409816972 instance=ExtResource("2_e2o6t")]
+position = Vector2(-214, -65)
+
+[node name="PineTree14" parent="." unique_id=1964448377 instance=ExtResource("2_e2o6t")]
+position = Vector2(213, 826)
+
+[node name="PineTree16" parent="." unique_id=1786717450 instance=ExtResource("2_e2o6t")]
+position = Vector2(335, -214)
+
+[node name="PineTree17" parent="." unique_id=1457542295 instance=ExtResource("2_e2o6t")]
+position = Vector2(398, -180)
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="GameOver/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="GameOver/MenuButton" to="." method="_on_menu_button_pressed"]

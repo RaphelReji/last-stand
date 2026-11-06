@@ -29,3 +29,8 @@ func _on_restart_button_pressed() -> void:
 func _on_mob_killed():
 	score+=10
 	%ScoreLabel.text = "Score:" + str(score)
+
+
+func _on_menu_button_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://main_menu.tscn")
