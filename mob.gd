@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal  killed
+
 var health = 3
 
 @onready var player = get_node("/root/Game/Player")
@@ -17,6 +19,7 @@ func take_damage():
 	%Slime.play_hurt()
 	
 	if health == 0:
+		killed.emit()
 		queue_free()
 		
 		const SMOKE_SCENE = preload("res://smoke_explosion/smoke_explosion.tscn")
