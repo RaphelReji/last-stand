@@ -13,6 +13,32 @@ _data = {
 }
 point_count = 5
 
+[sub_resource type="FontVariation" id="FontVariation_fc0e3"]
+variation_embolden = 0.56
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7jktm"]
+bg_color = Color(0, 0.47843137, 0.7647059, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+
+[sub_resource type="FontVariation" id="FontVariation_ryrav"]
+variation_embolden = 1.18
+spacing_glyph = 1
+spacing_space = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eow3j"]
+bg_color = Color(0, 0.47843137, 0.7647059, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+
 [node name="Game" type="Node2D" unique_id=1239996648]
 y_sort_enabled = true
 script = ExtResource("1_feb5d")
@@ -339,29 +365,40 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -48.0
-offset_top = 64.0
-offset_right = 44.0
-offset_bottom = 100.0
+offset_left = -60.0
+offset_top = 55.0
+offset_right = 60.0
+offset_bottom = 90.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 0.9254902, 0.7882353, 1)
+theme_override_fonts/font = SubResource("FontVariation_fc0e3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_7jktm")
 text = "RESTART
 "
 
 [node name="MenuButton" type="Button" parent="GameOver" unique_id=501554043]
-anchors_preset = 7
+process_mode = 2
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -38.0
-offset_top = -247.0
-offset_right = 31.0
-offset_bottom = -211.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = 116.0
+offset_right = 60.0
+offset_bottom = 152.0
 grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 20
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_ryrav")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_eow3j")
 text = "MENU"
 
 [node name="PineTree6" parent="." unique_id=2100007219 instance=ExtResource("2_e2o6t")]
