@@ -39,6 +39,27 @@ Use the following keyboard controls to move your character:
 - **GDQuest** – For the 2D game development tutorial that helped me learn and build this project.
 - **Assets** – Thanks to the original asset creators for the resources used in this game.
 
+
+## What I Changed from the Tutorial
+
+### Original Tutorial vs My Game
+
+| Original Tutorial | My Game |
+|---|---|
+| ![Original](screenshots/original.png) | ![My Game](screenshots/game.png) |
+
+### Original Tutorial
+The original game was a basic shooting game with a simple map. It had no main menu, restart button, or proper interface.
+
+### What I Added
+- Designed a new environment with trees, assets, and different areas.
+- Completely changed the game's visual theme and player colour.
+- Added more slime enemies.
+- Added a scoring system (10 points for each slime killed).
+- Added a live score update.
+- Created a main menu with a Play button.
+- Added a Game Over screen, Restart button, and Main Menu button.
+- Polished the game myself.
 ---
 
 Thanks for checking out!
