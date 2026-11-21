@@ -62,4 +62,12 @@ Created new environment with trees, assets and several areas.
 - Developed and perfectionized this game myself.
 ---
 
+### Changes After Review
+
+**Problem:** Sometimes, when the player enters a crowd of slimes, one slime attaches to the player. This may happen because the player pushes the slime while the slime keeps moving towards the player.
+
+**Fix:** Added knockback so the slime moves backwards when it hits the player, then starts chasing again.
+
+
+**Known Issues:** There are still many things to improve. Player-to-slime and slime-to-slime collisions sometimes cause vibrations, which I think are caused by collision issues. I know the game still has problems, but I think I made it pretty well.
 Thanks for checking out!
