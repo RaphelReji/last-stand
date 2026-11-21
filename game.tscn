@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://73476beeelqf" path="res://player.tscn" id="1_80nbo"]
 [ext_resource type="Script" uid="uid://crr1gqqa24lbr" path="res://game.gd" id="1_feb5d"]
 [ext_resource type="PackedScene" uid="uid://3qq8lvw3r88o" path="res://pine_tree.tscn" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://bync2whn82o1g" path="res://wall.tscn" id="4_fc0e3"]
 
 [sub_resource type="FontVariation" id="FontVariation_feb5d"]
 variation_embolden = 1.27
@@ -38,12 +39,6 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 expand_margin_left = 5.0
 expand_margin_right = 5.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pfk3"]
-size = Vector2(2500, 100)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tkg2v"]
-size = Vector2(100, 2500)
 
 [node name="Game" type="Node2D" unique_id=1239996648]
 y_sort_enabled = true
@@ -459,38 +454,110 @@ position = Vector2(335, -214)
 [node name="PineTree17" parent="." unique_id=1457542295 instance=ExtResource("2_e2o6t")]
 position = Vector2(398, -180)
 
-[node name="ForestBoundary" type="Node2D" parent="." unique_id=931154442]
+[node name="wall" parent="." unique_id=1012912158 instance=ExtResource("4_fc0e3")]
+position = Vector2(-551, -1088)
+rotation = -0.0032690763
 
-[node name="TopWall" type="StaticBody2D" parent="ForestBoundary" unique_id=468962110]
-position = Vector2(0, -1200)
+[node name="wall5" parent="." unique_id=1052506910 instance=ExtResource("4_fc0e3")]
+position = Vector2(-2018.9999, -538)
+rotation = -1.4402477
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ForestBoundary/TopWall" unique_id=1413817863]
-position = Vector2(0, -1000)
-shape = SubResource("RectangleShape2D_1pfk3")
+[node name="wall6" parent="." unique_id=148615704 instance=ExtResource("4_fc0e3")]
+position = Vector2(-2075, 381.99994)
+rotation = -1.6063291
 
-[node name="BottomWall" type="StaticBody2D" parent="ForestBoundary" unique_id=1591061471]
-position = Vector2(0, 1200)
+[node name="wall7" parent="." unique_id=148676659 instance=ExtResource("4_fc0e3")]
+position = Vector2(-2033.0002, 1385)
+rotation = -1.6374105
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ForestBoundary/BottomWall" unique_id=1773196168]
-position = Vector2(0, 1000)
-shape = SubResource("RectangleShape2D_1pfk3")
+[node name="wall8" parent="." unique_id=112992473 instance=ExtResource("4_fc0e3")]
+position = Vector2(-1938, 2384)
+rotation = -1.6952846
 
-[node name="LeftWall" type="StaticBody2D" parent="ForestBoundary" unique_id=1570795551]
-position = Vector2(-1200, 0)
+[node name="wall9" parent="." unique_id=1989971314 instance=ExtResource("4_fc0e3")]
+position = Vector2(-1688, 3161.0002)
+rotation = -2.0578194
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ForestBoundary/LeftWall" unique_id=1473173253]
-shape = SubResource("RectangleShape2D_tkg2v")
+[node name="wall10" parent="." unique_id=1085473421 instance=ExtResource("4_fc0e3")]
+position = Vector2(-1170, 3846)
+rotation = -2.5180771
 
-[node name="RightWall" type="StaticBody2D" parent="ForestBoundary" unique_id=1875501276]
-position = Vector2(1200, 0)
+[node name="wall11" parent="." unique_id=748756151 instance=ExtResource("4_fc0e3")]
+position = Vector2(-498, 4209)
+rotation = -3.1633058
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ForestBoundary/RightWall" unique_id=886096712]
-shape = SubResource("RectangleShape2D_tkg2v")
+[node name="wall12" parent="." unique_id=1943867384 instance=ExtResource("4_fc0e3")]
+position = Vector2(505.99994, 4187)
+rotation = -3.1633058
 
-[node name="BoundaryTrees" type="Node2D" parent="ForestBoundary" unique_id=1821414472]
+[node name="wall13" parent="." unique_id=2107074474 instance=ExtResource("4_fc0e3")]
+position = Vector2(1481, 4167)
+rotation = -3.1633058
 
-[node name="PineTree" parent="ForestBoundary/BoundaryTrees" unique_id=202483992 instance=ExtResource("2_e2o6t")]
-position = Vector2(-1000, -1000)
+[node name="wall14" parent="." unique_id=736530403 instance=ExtResource("4_fc0e3")]
+position = Vector2(2456, 4145)
+rotation = -3.1633058
+
+[node name="wall15" parent="." unique_id=23923172 instance=ExtResource("4_fc0e3")]
+position = Vector2(3420.0002, 4123)
+rotation = -3.1633058
+
+[node name="wall16" parent="." unique_id=1075424390 instance=ExtResource("4_fc0e3")]
+position = Vector2(4352, 4079.9995)
+rotation = -3.1633058
+
+[node name="wall17" parent="." unique_id=1488240213 instance=ExtResource("4_fc0e3")]
+position = Vector2(5120.9995, 4101)
+rotation = -4.740653
+
+[node name="wall18" parent="." unique_id=763376999 instance=ExtResource("4_fc0e3")]
+position = Vector2(5093, 3080.9998)
+rotation = -4.740653
+
+[node name="wall19" parent="." unique_id=1585523792 instance=ExtResource("4_fc0e3")]
+position = Vector2(5067, 2043)
+rotation = -4.740653
+
+[node name="wall20" parent="." unique_id=1583725631 instance=ExtResource("4_fc0e3")]
+position = Vector2(5039, 1030)
+rotation = -4.740653
+
+[node name="wall21" parent="." unique_id=825252911 instance=ExtResource("4_fc0e3")]
+position = Vector2(4980, -15)
+rotation = -4.740653
+
+[node name="wall22" parent="." unique_id=611031788 instance=ExtResource("4_fc0e3")]
+position = Vector2(4937, -1001)
+rotation = -4.740653
+
+[node name="wall23" parent="." unique_id=389328488 instance=ExtResource("4_fc0e3")]
+position = Vector2(4937, -1760.0001)
+rotation = -6.354255
+
+[node name="wall24" parent="." unique_id=1933023081 instance=ExtResource("4_fc0e3")]
+position = Vector2(3933, -1700)
+rotation = -6.354255
+
+[node name="wall25" parent="." unique_id=417434743 instance=ExtResource("4_fc0e3")]
+position = Vector2(3027, -1542.0001)
+rotation = -6.593692
+
+[node name="wall26" parent="." unique_id=486460117 instance=ExtResource("4_fc0e3")]
+position = Vector2(2299.0002, -1296)
+rotation = -6.6797695
+
+[node name="wall4" parent="." unique_id=1153663373 instance=ExtResource("4_fc0e3")]
+position = Vector2(-1586, -1058)
+rotation = -0.0032690763
+scale = Vector2(1.0599139, 0.77293456)
+
+[node name="wall2" parent="." unique_id=132213144 instance=ExtResource("4_fc0e3")]
+position = Vector2(475.00006, -1097)
+rotation = -0.0032690763
+
+[node name="wall3" parent="." unique_id=982339507 instance=ExtResource("4_fc0e3")]
+position = Vector2(1501, -1088.9999)
+rotation = -0.0032690763
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
