@@ -51,15 +51,15 @@ Use the following keyboard controls to move your character:
 ### Original Tutorial
 The original game was a basic shooting game with a simple map. It had no main menu, restart button, or proper interface.
 
-### What I Added
-- Designed a new environment with trees, assets, and different areas.
-- Completely changed the game's visual theme and player colour.
+### What I Included
+Created new environment with trees, assets and several areas.
+- Completely changed the game's player color and visual theme.
 - Added more slime enemies.
-- Added a scoring system (10 points for each slime killed).
-- Added a live score update.
-- Created a main menu with a Play button.
-- Added a Game Over screen, Restart button, and Main Menu button.
-- Polished the game myself.
+- There is a scoring mechanism that gives you 10 points for every slime killed.
+- Real-time score update was included.
+- Created the main menu with a Play button.
+– Place a Game Over screen with Restart and Main Menu buttons.
+- Developed and perfectionized this game myself.
 ---
 
 Thanks for checking out!
