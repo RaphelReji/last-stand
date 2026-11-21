@@ -69,5 +69,15 @@ Created new environment with trees, assets and several areas.
 **Fix:** Added knockback so the slime moves backwards when it hits the player, then starts chasing again.
 
 
+## New Fixes & Improvements
+
+- Fixed the map boundary by adding rocky walls around the playable area.
+- Added more pine trees to improve the forest environment.
+- Added arrow-key controls alongside WASD.
+
+## Credits
+
+- **Rocky Wall 2D Tiles:** [Yuli Enderling](https://yuli-enderling.itch.io/rocky-wall-2d-tiles)
+
 **Known Issues:** There are still many things to improve. Player-to-slime and slime-to-slime collisions sometimes cause vibrations, which I think are caused by collision issues. I know the game still has problems, but I think I made it pretty well.
 Thanks for checking out!
